@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap");
+
+/* Colors: #ef476f red #ffd166 orange #06d6a0 green #118ab2 blue #073b4c dark navy*/
+html {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: "Wix Madefor Display", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f7ede2;
+	color: #073b4c;
+}
+
+.container {
+	width: 480px;
+	height: 630px;
+	background: #ffd166;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 5px 30px 10px rgba(7, 59, 76, 0.4);
+}
+
+/* Form */
+form {
+	width: 90%;
+}
+
+.form-group {
+	height: 65px;
+}
+
+label {
+	position: relative;
+	bottom: 3px;
+}
+
+input {
+	width: 100%;
+	height: 34px;
+	padding: 5px;
+	border: 1px solid #073b4c;
+	border-radius: 5px;
+	outline: none;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+input:valid {
+	border: 1px solid #06d6a0;
+}
+
+input:invalid {
+	border: 1px solid #ef476f;
+}
+
+button {
+	cursor: pointer;
+	color: white;
+	background: #118ab2;
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	width: 100%;
+	font-family: "Wix Madefor Display", sans-serif;
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+button:hover {
+	filter: brightness(120%);
+}
+
+button:focus {
+	outline: none;
+}
+
+.message-container{
+  border: 1px solid #073b4c;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
